@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Employee Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="logic.js"></script>
+</head>
+<body>
+	<div class="container" id="main-container">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<p id="header-1">New Employees</p>
+				</div>
+				<div class="row" id="form-input">
+					<div class="col-md-4 col-sm-6 col-xs-12 input-field">
+						<p>Enter Name</p>
+						<input type="text" name="name" id="name">
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 input-field">
+						<p>Enter Profession</p>
+						<input type="text" name="profession" id="profession">
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 input-field">
+						<p>Enter Age</p>
+						<input type="text" name="age" id="age" onKeyDown="checkIfNumber(event)">
+					</div>
+				</div>
+				<div class="row" id="form-submit">
+					<a class="btn btn-default" onclick="addEmployee()">Add User</a>
+				</div>
+				<div class="row" id="form-msg">
+					<p id="error-msg">Error : Please Make sure All the fields are filled before adding in an employee !</p>
+					<p id="success-msg">Success : Employee Added!</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<p id="header-2">Added Employees</p>
+				</div>
+				<div class="row">
+					<p id="no-employee-msg">You have 0 Employees</p>
+					<div class="container" id="employees-list"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

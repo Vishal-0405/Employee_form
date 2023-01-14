@@ -1,0 +1,95 @@
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+#main-container {
+	color: #ffffff;
+	padding: 6vh 2vh 0 5vh;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.row {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#header-1 {
+	font-size: 32px;
+}
+
+#form-input {
+	margin-top: 2vh;
+}
+
+.input-field {
+	padding: 0;
+	padding-right: 3vh;
+	margin-top: 1vh;
+}
+
+.input-field input {
+	width: 100%;
+	padding: 8px;
+	background-color: #000000;
+	border: 1px #ffffff solid;
+	border-radius: 5px;
+}
+
+#form-submit {
+	margin-top: 3vh;
+}
+
+#form-submit a {
+	border-radius: 0;
+	padding: 12px 36px;
+}
+
+#form-msg {
+	margin-top: 3vh;
+}
+
+#error-msg {
+	color: red;
+	display: none;
+}
+
+#success-msg {
+	color: green;
+	display: none;
+}
+
+#header-2 {
+	margin-top: 3vh;
+	font-size: 24px;
+}
+
+#no-employee-msg {
+	margin-top: 2vh;
+	font-size: 18px;
+	color: grey;
+}
+
+#employees-list {
+	padding-top: 2vh;
+}
+
+.employee-item {
+	border: 1px #ffffff solid;
+	border-radius: 5px;
+	padding: 8px 2px 0 2px;
+	margin-top: 3vh;
+}
+
+.delete-btn  a{
+	padding: 6px 16px;
+	border-radius: 20px;
+	margin-top: 3vh;
+}
